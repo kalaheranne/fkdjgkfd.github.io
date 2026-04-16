@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Redirect 2 detik -->
+    <!-- Auto redirect 2 detik -->
     <meta http-equiv="refresh" content="2; url=https://www.profitablecpmratenetwork.com/nxhiyfe8u9?key=29786ea5f9fc6581e9b50ef47a13284c">
 
-    <!-- Thumbnail / Preview -->
+    <!-- Thumbnail -->
     <meta property="og:image" content="https://cdn.aceimg.com/ca7f97a03.jpg">
-    <meta property="og:title" content="Loading...">
-    <meta property="og:description" content="Mohon tunggu sebentar">
 
     <title>Loading...</title>
 
@@ -24,45 +22,61 @@
         body {
             width: 100%;
             height: 100vh;
-            background: #000;
+            overflow: hidden;
+            background: black;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
         }
 
-        .container {
+        .bg {
+            position: absolute;
             width: 100%;
             height: 100%;
         }
 
-        .container img {
+        .bg img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .text {
-            position: absolute;
-            color: #fff;
-            font-size: 20px;
-            font-family: Arial;
-            bottom: 20px;
-            text-align: center;
-            width: 100%;
+        .play-btn {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .play-btn:before {
+            content: '';
+            border-style: solid;
+            border-width: 15px 0 15px 25px;
+            border-color: transparent transparent transparent white;
+            margin-left: 5px;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-    <img src="https://cdn.aceimg.com/ca7f97a03.jpg" alt="thumbnail">
+<div class="bg">
+    <img src="https://cdn.aceimg.com/ca7f97a03.jpg" alt="">
 </div>
 
-<div class="text">
-    Mohon tunggu... mengalihkan dalam 2 detik
-</div>
+<!-- Tombol Play -->
+<div class="play-btn" onclick="goRedirect()"></div>
+
+<script>
+    function goRedirect(){
+        window.location.href = "https://www.profitablecpmratenetwork.com/nxhiyfe8u9?key=29786ea5f9fc6581e9b50ef47a13284c";
+    }
+</script>
 
 </body>
 </html>
